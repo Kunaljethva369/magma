@@ -1,0 +1,403 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Jost, sans-serif;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(26, 58, 211);
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+canvas {
+    background-image: linear-gradient(to bottom, #2a4cff 0, #0a3cce 0%);
+}
+
+.nav {
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 100px;
+}
+
+.nav .logo img {
+    width: 70%;
+}
+
+.nav .menu {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.nav .menu button:first-child {
+    font-size: .9rem;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    padding: .8rem 1rem;
+    color: white;
+    border-radius: 6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+    background-color: transparent;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.nav .menu div {
+    cursor: pointer;
+    position: absolute;
+    top: 42px;
+    right: 90px;
+}
+
+.nav .menu div span:first-child {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+.nav .menu div span:last-child {
+    position: absolute;
+    width: 40px;
+    height: 2.5px;
+    background-color: white;
+    top: 10px;
+}
+
+.firstSection video {
+    position: relative;
+    width: 100%;
+}
+
+.firstSection .firstSectionContent {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    transform: translate(-25%, -75%);
+    color: white;
+}
+
+.firstSection .firstSectionContent h1 {
+    font-size: 4rem;
+    width: 60%;
+    font-weight: 100;
+}
+
+.firstSection .firstSectionContent .firstSectionInnerContent {
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+.firstSection .firstSectionContent .firstSectionInnerContent p {
+    width: 40%;
+}
+
+.firstSection .firstSectionContent .firstSectionInnerContent a,
+.eightSection a {
+    font-size: 1rem;
+    min-width: 2rem;
+    height: 2.5rem;
+    border: none;
+    padding: 0 2.5rem;
+    color: #0a3cce;
+    border-radius: 6rem;
+    background: #fff;
+    line-height: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+#page2,
+#page4,
+#page6 {
+    position: relative;
+    background-color: linear-gradient(to bottom, #2a4cff 0, #0a3cce 0%);
+    color: white;
+}
+
+.secondSection {
+    width: 100vw;
+    padding-top: 100px;
+    padding-left: 100px;
+    height: max-content;
+    position: absolute;
+    opacity: .9;
+    top: -48px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99;
+    /* background-color: rgb(26,58,211); */
+}
+
+.secondSectionpage6 {
+    position: absolute;
+    top: -400px;
+}
+
+#page2 h5,
+#page4 h5,
+#page6 h5 {
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#page5 canvas {
+    background-color: blue !important;
+}
+
+#page2 h2,
+#page4 h2,
+#page6 h2 {
+    width: 88%;
+    padding-top: 2rem;
+    font-size: 3.3rem;
+    font-weight: 100;
+    word-wrap: break-word;
+    color: #dadada69;
+}
+
+#page6 h2 {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+}
+
+#page3,
+#page5,
+#page7,
+#page8 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 8rem !important; */
+}
+
+#page7 .circleOuter {
+    position: absolute;
+    height: 390px;
+    width: 390px;
+    border-radius: 50%;
+    border: 1px solid beige;
+}
+
+#page7 .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 1px solid beige;
+}
+
+
+#page8 video {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    width: 80%;
+}
+
+#page8 video {
+    width: 80%;
+}
+
+#page8 .eightSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 65%;
+}
+
+.eightSection h2 {
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: white;
+    padding-bottom: 1.5rem;
+}
+
+#page9 .whatisMagma {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page9 .whatisMagma h2 {
+    align-self: flex-start;
+    width: 30%;
+    padding-right: 3rem;
+    font-size: 5rem;
+    font-weight: 100;
+    color: white;
+}
+
+#page9 .whatisMagma img {
+    border-radius: 10px;
+}
+
+#page10 {
+    padding-top: 4rem;
+    display: flex;
+}
+
+#page10 .topics {
+    width: 50%;
+    margin: 0px auto;
+    margin-right: 150px;
+
+    >.items {
+        color: white;
+        padding-top: 3.4rem;
+
+        >h4 {
+            font-size: 1.7rem;
+            font-weight: 100;
+            padding-bottom: .7rem;
+        }
+
+        >p {
+            font-size: 1.6rem;
+            word-spacing: 1.2px;
+            color: rgb(207, 207, 207, .9);
+        }
+    }
+}
+
+.c-scrollbar_thumb {
+    background-color: white !important;
+}
+
+@media only screen and (max-width:1024px) {
+    .nav {
+        padding: 10px 10px;
+    }
+
+    .nav .logo img {
+        mix-blend-mode: exclusion;
+    }
+
+    .menu div span {
+        display: none;
+    }
+
+    .firstSection video {
+        object-fit: cover;
+        height: 100vh;
+    }
+
+    .firstSection .firstSectionContent {
+        top: 70%;
+        left: 30%;
+        width: 100%;
+        transform: translate(-30%, -70%);
+        text-align: center;
+    }
+
+    .firstSection .firstSectionContent h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .firstSection .firstSectionContent .firstSectionInnerContent {
+        flex-direction: column;
+    }
+
+    .firstSection .firstSectionContent .firstSectionInnerContent p {
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+
+    #page2,
+    .secondSection,
+    #page4,
+    #page6 {
+        padding-left: 0px;
+        text-align: center;
+        margin: 0px auto;
+        width: 100%;
+    }
+
+    #page2 h2,
+    #page4 h2,
+    #page6 h2 {
+        width: 90%;
+        margin: 0px auto;
+        padding: 0px;
+        font-size: 2rem;
+    }
+
+    #page7 .circleOuter {
+        height: 220px;
+        width: 220px;
+    }
+
+    #page7 .circle {
+        height: 160px;
+        width: 150px;
+    }
+
+    #page8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #page8 video {
+        width: 180%;
+        margin: 0px;
+    }
+
+    #page8 .eightSection {
+        position: relative;
+        top: -80px;
+    }
+
+    #page8 .eightSection h2 {
+        font-size: 2.8rem;
+    }
+
+    #page9 .whatisMagma {
+
+        /* display: block; */
+        >h2 {
+            width: 40%;
+            font-size: 1.8rem;
+            padding-right: 1.7rem;
+        }
+    }
+
+    #page10 .topics {
+        width: 100%;
+        margin: 14px;
+    }
+}
